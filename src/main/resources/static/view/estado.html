@@ -1,0 +1,32 @@
+
+<div >
+	
+	
+<form novalidate name="frmEstado">
+	<div>	
+		<label>UF</label>
+		<input type="text" name="txtUF" ng-minlength="2" ng-maxlength="50"   ng-model="estado.uf" required/>
+		<span ng-show="frmEstado.txtUF.$error.required  && frmEstado.txtUF.$dirty">Campo nome obrigatorio</span>
+		
+		
+	</div>
+	
+	<input type="button" value="Salvar" ng-click="SalvarEstado()" ng-disabled=frmEstado.$invalid  />
+	                                                               	
+	<input type="button" value="Cancelar" ng-click="CancelarAlteracao ()"  ng-disabled=frmEstado.$invalid  />
+	
+		
+</form>	
+	<hr/>
+	<div ng-repeat="est in estados">
+		<fieldset>
+			
+			{{est.iduf + ' - '+  est.uf}}			
+			<input type="button" value="-" ng-click="ExcluirEstado(est)" />
+			<input type="button" value="A" ng-click="AlterarEstado(est)" />
+			<a href="/estado/{{es.iduf}}">Detalhe</a>
+		</fieldset>
+		
+	</div>
+
+</div>

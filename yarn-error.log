@@ -1,0 +1,42 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js
+
+PATH: 
+  c:\Oracle\product\11.2.0\client_1\bin;C:\Program Files\Java\jdk1.8.0_102\jre\bin;C:\Program Files (x86)\Java\jdk1.8.0_45\jre\bin\client;C:\Program Files\nodejs\;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Yarn\bin;C:\Program Files\Git\cmd;C:\HashiCorp\Vagrant\bin;C:\Program Files (x86)\CVSNT\;C:\Users\luciano.bernardo\AppData\Roaming\npm;C:\Users\luciano.bernardo\AppData\Local\Yarn\bin;C:\HashiCorp\Vagrant\bin
+
+Yarn version: 
+  0.27.5
+
+Node version: 
+  6.11.2
+
+Platform: 
+  win32 x64
+
+npm manifest: 
+  {
+    "name": "apiweb",
+    "version": "1.0.0",
+    "main": "index.js",
+    "author": "Luciano",
+    "license": "MIT"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js: Invalid tar header. Maybe the tar is corrupted or it needs to be gunzipped?
+      at Object.exports.decode (C:\Program Files (x86)\Yarn\lib\yarn-cli.js:67808:43)
+      at Extract.onheader (C:\Program Files (x86)\Yarn\lib\yarn-cli.js:125622:39)
+      at Extract._write (C:\Program Files (x86)\Yarn\lib\yarn-cli.js:125745:8)
+      at doWrite (C:\Program Files (x86)\Yarn\lib\yarn-cli.js:64471:64)
+      at writeOrBuffer (C:\Program Files (x86)\Yarn\lib\yarn-cli.js:64460:5)
+      at Extract.Writable.write (C:\Program Files (x86)\Yarn\lib\yarn-cli.js:64397:11)
+      at Duplexify.ondata (C:\Program Files (x86)\Yarn\lib\yarn-cli.js:63545:20)
+      at emitOne (events.js:96:13)
+      at Duplexify.emit (events.js:188:7)
+      at readableAddChunk (C:\Program Files (x86)\Yarn\lib\yarn-cli.js:63216:18)

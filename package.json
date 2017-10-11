@@ -1,0 +1,60 @@
+--Em HML aplicar as seguintes baselines: RMD 84511
+
+
+RDM 84543 NAO TEM JA EH DE HOMOLOGACAO
+Ambiente DW:
+Baseline: 36: bsl_dw_inss_hml_prd
+Script: DDL_FINAL_V14__DW_INSS
+(Entrega contínua)
+
+
+--Em PRD aplicar as seguintes baselines:
+
+Ambiente SA:  
+Aplicar as três baselines a seguir:
+
+
+RDM: 84549    RDM HML: 	50288
+Stream: str_bg_sibe_sa_head
+-01
+Baseline: 28: bsl_sibe_sa_hml
+Script: DDL_FINAL_V9__BG_SIBE_SA.sql
+
+
+RMD: 84550   51259
+-02
+Baseline: 30: bsl_sibe_sa_hml
+Script: DDL_FINAL_V10__BG_SIBE_SA.sql
+
+RDM: 84559  55288
+
+-03 
+Script: DDL_FINAL_V11__BG_SIBE_SA.sql
+Baseline: 31: bsl_sibe_sa_hml
+
+
+
+
+Ambiente DW:
+Favor aplicar somente essa única baseline que equivale às três baselines de HML.
+Stream: str_dw_inss_head
+Script: DDL_FINAL_V13__DW_INSS.sql
+
+RDM: 84560    (50289 51260  55292 )
+Baseline: 35: bsl_dw_inss_prd
+E após aplicar essa baseline 35, a baseline de entrega contínua pode ser aplicada:
+
+RDM: 84565 84543
+Baseline: 36: bsl_dw_inss_hml_prd
+Script: DDL_FINAL_V14__DW_INSS
+
+
+
+RDM: 84566   	50290
+Ambiente DM:
+Dos 3 versionamentos de HML que precisam ser levados pra PRD, somente um deles incluía alterações no DM.
+Stream: str_dm_sibe_monitor_head
+Baseline: 9: bsl_dm_sibe_monitor_hml
+Script: DDL_FINAL_V5__DM_SIBE_MONITOR.sql
+
+
